@@ -1,0 +1,51 @@
+html, body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 384px;
+    height: 522px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 24px;
+    row-gap: 70px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Figtree-variable';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Figtree-italic';
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+.tag{
+    font-family: 'Figtree-variable';
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 700;
+    background-color: hsl(47, 88%, 63%);
+    padding: 4px 12px 4px 12px;
+    border-radius: 4px;
+}
+
+p.a {
+    font-family: 'Figtree-variable';
+}
+
+.category{
+    
+}
+
