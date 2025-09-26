@@ -79,6 +79,10 @@ p.title {
     letter-spacing: 0px;
 }
 
+p.title:hover {
+    color: rgb(244, 208, 78);
+}
+
 p.description {
     font-family: 'Figtree-variable';
     font-size: 16px;
