@@ -1,9 +1,23 @@
 html, body {
-    background-color: hsl(47, 88%, 63%);
+    background-color: rgb(244, 208, 78);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+@font-face {
+    font-family: 'Figtree-variable';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-italic';
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 300 900;
+    font-style: italic;
 }
 
 .card {
@@ -12,10 +26,22 @@ html, body {
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     padding: 24px;
-    row-gap: 70px;
     display: flex;
     row-gap: 24px;
     flex-direction: column;
+    border: 1px solid hsl(0, 0%, 7%);
+    filter: drop-shadow(8px 8px #000000);
+}
+
+.content {   
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.content > * {
+  margin: 0;           
 }
 
 img {
@@ -23,18 +49,9 @@ img {
     border-radius: 10px;
 }
 
-@font-face {
+.category{
     font-family: 'Figtree-variable';
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: 'Figtree-italic';
-    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
-}
-
-.tag{
-    font-family: 'Figtree-variable';
+    align-items: flex-start;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0px;
@@ -42,10 +59,36 @@ img {
     background-color: hsl(47, 88%, 63%);
     padding: 4px 12px 4px 12px;
     border-radius: 4px;
+    column-gap: 8px;
 }
 
-p.a {
+p.publish-date {
     font-family: 'Figtree-variable';
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: hsl(0, 0%, 7%);
 }
 
-.category {}
+p.title {
+    font-family: 'Figtree-variable';
+    font-size: 24px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+p.description {
+    font-family: 'Figtree-variable';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #6b6b6b;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+}
